@@ -29,7 +29,7 @@ const SHAPES = {
 
 type GameState = "START" | "PLAYING" | "PAUSED" | "WON" | "GAMEOVER";
 type Piece = { pos: { x: number; y: number }; shape: number[][]; type: keyof typeof SHAPES };
-type LeaderboardEntry = { name: string; time: string; timestamp: string };
+type LeaderboardEntry = { name: string; finishtime: string };
 
 const createEmptyGrid = () => Array.from({ length: ROWS }, () => Array(COLS).fill(null));
 
